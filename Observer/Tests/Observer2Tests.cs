@@ -11,8 +11,9 @@ public class Observer2Tests
         // Arrange
         var subject = new WeatherStation();
         var output = new StringWriter();
+        var observer = new CurrentConditionsDisplay(output);
 
-        using var _ = new CurrentConditionsDisplay(subject, output);
+        using var _ = subject.Subscribe(observer);
 
         // Act
         subject.SetMeasurements(25f, 30f, 40f);
@@ -27,10 +28,14 @@ public class Observer2Tests
     {
         // Arrange
         var subject = new WeatherStation();
-        var subscriber = new CurrentConditionsDisplay();
-        subject.Subscribe(subscriber);
+        var observer = new CurrentConditionsDisplay();
+
+        // Act
+        using (subject.Subscribe(observer))
+        {
+        }
 
         // Assert
-        Assert.Contains("true", "true");
+        Assert.DoesNotContain(observer, subject.GetObservers());
     }
 }

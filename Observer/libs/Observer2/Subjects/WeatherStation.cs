@@ -10,13 +10,6 @@ public class WeatherStation : Subject<WeatherDataModel>
     {
         _weatherData = new(temperature, humidity, pressure);
 
-        NotifyObservers();
-    }
-
-    override protected void NotifyObservers()
-    {
-        if (_weatherData != null)
-            foreach (var observer in _observers)
-                observer.OnNext(_weatherData);
+        NotifyObservers(_weatherData);
     }
 }

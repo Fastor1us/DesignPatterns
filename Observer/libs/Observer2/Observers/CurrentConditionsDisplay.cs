@@ -1,21 +1,12 @@
-﻿using Observer2.Subjects;
-using Observer2.Interfaces;
+﻿using Observer2.Interfaces;
 using Observer2.Models;
 
 namespace Observer2.Observers;
 
-public class CurrentConditionsDisplay : IObserver<WeatherDataModel>, IDisplayElement, IDisposable
+public class CurrentConditionsDisplay(TextWriter? output = null) : IObserver<WeatherDataModel>, IDisplayElement
 {
-    private readonly Subject<WeatherDataModel> _subject;
-    private readonly TextWriter _output;
+    private readonly TextWriter _output = output ?? Console.Out;
     private WeatherDataModel? _weatherData;
-
-    public CurrentConditionsDisplay(Subject<WeatherDataModel> subject, TextWriter? output = null)
-    {
-        subject.Subscribe(this);
-        _subject = subject;
-        _output = output ?? Console.Out;
-    }
 
     public void OnNext(WeatherDataModel value)
     {
@@ -35,12 +26,6 @@ public class CurrentConditionsDisplay : IObserver<WeatherDataModel>, IDisplayEle
 
     public void OnCompleted()
     {
-        Dispose();
-    }
-
-    public void Dispose()
-    {
-        _subject.Unsubscribe(this);
-        _output.WriteLine($"{this.GetType().Name} is Disposed");
+        //
     }
 }
