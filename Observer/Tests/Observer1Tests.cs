@@ -9,16 +9,16 @@ public class Observer1Tests
     public void NotifiesObservers()
     {
         // Arrange
-        var weatherData = new WeatherData();
+        var subject = new WeatherData();
         var output = new StringWriter();
 
-        using var _ = new CurrentConditionsDisplay(weatherData, output);
+        using var _ = new CurrentConditionsDisplay(subject, output);
 
         // Act
-        weatherData.SetMeasurements(25f, 30f, 40f);
+        subject.SetMeasurements(25f, 30f, 40f);
 
         // Assert
-        Assert.Contains("25F degrees", output.ToString());
+        Assert.Contains("25°C", output.ToString());
         Assert.Contains("30% humidity", output.ToString());
     }
 
@@ -26,13 +26,13 @@ public class Observer1Tests
     public void UnsubscribesOnDispose()
     {
         // Arrange
-        var weatherData = new WeatherData();
-        var display = new CurrentConditionsDisplay(weatherData);
+        var subject = new WeatherData();
+        var observer = new CurrentConditionsDisplay(subject);
 
         // Act
-        display.Dispose();
+        observer.Dispose();
 
         // Assert
-        Assert.DoesNotContain(display, weatherData.Observers);
+        Assert.DoesNotContain(observer, subject.Observers);
     }
 }

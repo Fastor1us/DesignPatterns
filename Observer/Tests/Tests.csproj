@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\libs\Observer1\Observer1.csproj" />
+    <ProjectReference Include="..\libs\Observer2\Observer2.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,16 +5,16 @@ namespace Observer1.Observers;
 
 public class CurrentConditionsDisplay : Interfaces.IObserver<WeatherDataModel>, IDisplayElement, IDisposable
 {
-    private readonly ISubject<WeatherDataModel> _weatherData;
+    private readonly ISubject<WeatherDataModel> _subject;
     private readonly TextWriter _output;
     private float _temperature;
     private float _humidity;
 
-    public CurrentConditionsDisplay(ISubject<WeatherDataModel> weatherData, TextWriter? output = null)
+    public CurrentConditionsDisplay(ISubject<WeatherDataModel> subject, TextWriter? output = null)
     {
-        _weatherData = weatherData;
+        _subject = subject;
         _output = output ?? Console.Out;
-        _weatherData.RegisterObserver(this);
+        _subject.RegisterObserver(this);
     }
 
     public void Update(WeatherDataModel data)
@@ -26,11 +26,11 @@ public class CurrentConditionsDisplay : Interfaces.IObserver<WeatherDataModel>, 
 
     public void Display()
     {
-        _output.WriteLine($"Current conditions : {_temperature}F degrees and {_humidity}% humidity");
+        _output.WriteLine($"Current conditions : {_temperature}°C and {_humidity}% humidity");
     }
 
     public void Dispose()
     {
-        _weatherData.RemoveObserver(this);
+        _subject.RemoveObserver(this);
     }
 }
