@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator1", "libs\Decorator1\Decorator1.csproj", "{055EEBFA-4DD3-094F-2209-3A1016CC76FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055EEBFA-4DD3-094F-2209-3A1016CC76FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055EEBFA-4DD3-094F-2209-3A1016CC76FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055EEBFA-4DD3-094F-2209-3A1016CC76FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055EEBFA-4DD3-094F-2209-3A1016CC76FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {528AB35F-C006-495A-98D7-252B3CF8D8BA}
+	EndGlobalSection
+EndGlobal
