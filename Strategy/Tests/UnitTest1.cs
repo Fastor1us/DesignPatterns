@@ -25,7 +25,7 @@ public class DuckTests
     public void ModelDuck_SetFlyBehavior()
     {
         var model = new ModelDuck();
-        model.SetFlyBehavior(new FlyRocketPowered());
+        model.FlyBehavior = new FlyRocketPowered();
         var result = model.PerformFly();
         Assert.Equal("I'm flying with a rocket!", result);
     }
