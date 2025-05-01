@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorTests", "Tests\DecoratorTests.csproj", "{CA9F545F-698F-49BE-863A-FE3D2D6D94BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator1", "libs\Decorator1\Decorator1.csproj", "{055EEBFA-4DD3-094F-2209-3A1016CC76FF}"
 EndProject

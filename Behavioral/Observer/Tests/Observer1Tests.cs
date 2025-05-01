@@ -1,7 +1,7 @@
 ﻿using Observer1.Observers;
 using Observer1.Subjects;
 
-namespace Tests;
+namespace ObserverTests;
 
 public class Observer1Tests
 {

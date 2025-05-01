@@ -1,6 +1,6 @@
 using Decorator1;
 
-namespace Tests;
+namespace DecoratorTests;
 
 public class UnitTest1
 {

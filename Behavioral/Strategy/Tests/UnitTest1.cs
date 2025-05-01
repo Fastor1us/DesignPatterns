@@ -1,7 +1,7 @@
 using Strategy1.Ducks;
 using Strategy1.Behaviors;
 
-namespace Tests;
+namespace StrategyTests;
 
 public class DuckTests
 {
