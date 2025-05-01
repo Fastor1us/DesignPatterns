@@ -4,6 +4,7 @@ namespace FactoryMethodTests;
 
 public class LogisticsTests
 {
+
     [Theory]
     [InlineData("Tver", 10)]
     [InlineData("Tambov", 25)]
