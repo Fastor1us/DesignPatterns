@@ -7,8 +7,8 @@ public class LogisticsCompany
         CompanyName = "Global Logistics Incorporated";
         ShippingRate = 10.0f;
     }
-    private static readonly Lazy<LogisticsCompany>? _instance = new(() => new());
-    public static LogisticsCompany Instance => _instance!.Value;
+    private static readonly Lazy<LogisticsCompany> _instance = new(() => new());
+    public static LogisticsCompany Instance => _instance.Value;
 
     public string CompanyName { get; }
     public double ShippingRate { get; private set; }
