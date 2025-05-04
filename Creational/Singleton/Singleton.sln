@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonTests", "Tests\SingletonTests.csproj", "{F9D69CCC-853D-47A9-AD69-FA9BFC3F7824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton1", "Libs\Singleton1\Singleton1.csproj", "{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9D69CCC-853D-47A9-AD69-FA9BFC3F7824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D69CCC-853D-47A9-AD69-FA9BFC3F7824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D69CCC-853D-47A9-AD69-FA9BFC3F7824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D69CCC-853D-47A9-AD69-FA9BFC3F7824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C915EAD-94DD-4BD9-B594-D72B46CB77E6}
+	EndGlobalSection
+EndGlobal
