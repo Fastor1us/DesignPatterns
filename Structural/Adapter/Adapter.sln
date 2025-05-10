@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterTests", "Tests\AdapterTests.csproj", "{100FD3E0-3BC5-4131-A9DC-4140186C69AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter1", "Libs\Adapter1\Adapter1.csproj", "{9D129C33-117F-CE67-56A1-0DFFDD161A04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{100FD3E0-3BC5-4131-A9DC-4140186C69AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100FD3E0-3BC5-4131-A9DC-4140186C69AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100FD3E0-3BC5-4131-A9DC-4140186C69AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100FD3E0-3BC5-4131-A9DC-4140186C69AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D129C33-117F-CE67-56A1-0DFFDD161A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D129C33-117F-CE67-56A1-0DFFDD161A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D129C33-117F-CE67-56A1-0DFFDD161A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D129C33-117F-CE67-56A1-0DFFDD161A04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E372FED8-46A1-4A1F-A328-55799ED987AC}
+	EndGlobalSection
+EndGlobal
