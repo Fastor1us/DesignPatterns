@@ -4,7 +4,7 @@ using Adapter1.Processors;
 
 namespace AdapterTests;
 
-public class UnitTest1
+public class Adapter1Tests
 {
     [Fact]
     public void XmlClientCanWorkWithJsonViaAdapter()

@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Libs\Adapter1\Adapter1.csproj" />
+    <ProjectReference Include="..\Libs\Adapter2\Adapter2.csproj" />
   </ItemGroup>
 
   <ItemGroup>
