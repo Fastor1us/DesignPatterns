@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodTests", "Tests\TemplateMethodTests.csproj", "{D4711FC0-12F2-4C16-82AF-6F7A2E29543D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod1", "Libs\TemplateMethod1\TemplateMethod1.csproj", "{DD3D1470-A87C-BC51-F16C-114B23401A07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4711FC0-12F2-4C16-82AF-6F7A2E29543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4711FC0-12F2-4C16-82AF-6F7A2E29543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4711FC0-12F2-4C16-82AF-6F7A2E29543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4711FC0-12F2-4C16-82AF-6F7A2E29543D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3D1470-A87C-BC51-F16C-114B23401A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3D1470-A87C-BC51-F16C-114B23401A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3D1470-A87C-BC51-F16C-114B23401A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3D1470-A87C-BC51-F16C-114B23401A07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB2861CD-1651-4645-BA69-3318E29ADF2C}
+	EndGlobalSection
+EndGlobal
