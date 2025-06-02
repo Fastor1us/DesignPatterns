@@ -124,7 +124,7 @@ public class UnitTest1
     }
 
     [Fact]
-    public void ForLoopWorksWithIndexer()
+    public void WhileLoopWorksWithIterator()
     {
         // Arrange
         var menu = new CafeMenu(
@@ -137,7 +137,7 @@ public class UnitTest1
         var iterator = menu.CreateIterator();
         List<string> result = [];
 
-        for (; iterator.MoveNext();)
+        while (iterator.MoveNext())
         {
             result.Add(iterator.Current.Name);
         }
