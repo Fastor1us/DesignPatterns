@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Libs\Singleton1\Singleton1.csproj" />
+    <ProjectReference Include="..\Singleton2\Singleton2.csproj" />
   </ItemGroup>
 
   <ItemGroup>

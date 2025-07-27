@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonTests", "Tests\Sin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton1", "Libs\Singleton1\Singleton1.csproj", "{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton2", "Singleton2\Singleton2.csproj", "{3FC90B6A-329B-4E5E-8BFE-300057AE65FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADCFC730-7E51-8CEF-65C1-7DE6D5030C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC90B6A-329B-4E5E-8BFE-300057AE65FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC90B6A-329B-4E5E-8BFE-300057AE65FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC90B6A-329B-4E5E-8BFE-300057AE65FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC90B6A-329B-4E5E-8BFE-300057AE65FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

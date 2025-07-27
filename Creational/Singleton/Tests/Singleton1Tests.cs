@@ -2,7 +2,7 @@ using Singleton1;
 
 namespace SingletonTests;
 
-public class UnitTest1
+public class Singleton1Tests
 {
     [Fact]
     public async Task GetTheSameInstanceWhenCalledFromMultipleThreads()
