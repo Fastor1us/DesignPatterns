@@ -1,4 +1,4 @@
-﻿namespace Observer1.Interfaces;
+﻿namespace Observer1;
 
 public interface ISubject<T>
 {
@@ -10,9 +10,4 @@ public interface ISubject<T>
 public interface IObserver<T>
 {
     void Update(T model);
-}
-
-public interface IDisplayElement
-{
-    void Display();
 }

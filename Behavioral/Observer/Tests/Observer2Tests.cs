@@ -1,5 +1,4 @@
-﻿using Observer2.Observers;
-using Observer2.Subjects;
+﻿using Observer2;
 
 namespace ObserverTests;
 
@@ -11,7 +10,7 @@ public class Observer2Tests
         // Arrange
         var subject = new WeatherStation();
         var output = new StringWriter();
-        var observer = new CurrentConditionsDisplay(output);
+        var observer = new Observer(output);
 
         using var _ = subject.Subscribe(observer);
 
@@ -28,7 +27,7 @@ public class Observer2Tests
     {
         // Arrange
         var subject = new WeatherStation();
-        var observer = new CurrentConditionsDisplay();
+        var observer = new Observer();
 
         // Act
         using (subject.Subscribe(observer))
