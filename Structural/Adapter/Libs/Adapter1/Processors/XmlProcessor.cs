@@ -1,5 +1,4 @@
-﻿using Adapter1.Interfaces;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace Adapter1.Processors;
 

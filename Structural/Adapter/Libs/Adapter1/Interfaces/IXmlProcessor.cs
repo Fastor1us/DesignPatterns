@@ -1,4 +1,4 @@
-﻿namespace Adapter1.Interfaces;
+﻿namespace Adapter1;
 
 public interface IXmlProcessor<T> where T : class
 {
