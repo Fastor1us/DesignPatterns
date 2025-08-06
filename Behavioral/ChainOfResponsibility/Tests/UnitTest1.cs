@@ -6,21 +6,22 @@ namespace ChainOfResponsibilityTests;
 
 public class UnitTest1
 {
-    private readonly ChainBuilder<IOrder> _builder;
+    private readonly IHandler<IOrder> _chain;
 
     public UnitTest1()
     {
-        _builder = new ChainBuilder<IOrder>()
+        var builder = new ChainBuilder<IOrder>()
             .Add<CheckItemsAvailabilityHandler>()
             .Add<CheckUserBalanceHandler>()
             .Add<UsePromoCodeHandler>()
             .Add<AddOrderHandler>();
+        _chain = builder.Build();
     }
 
     private static (StringWriter stringWriter, IOrder order) SetupTest(
         Dictionary<string, int> basket,
         (string, int) user,
-        string promoCode = null,
+        string? promoCode = null,
         string orderId = "1")
     {
         var stringWriter = new StringWriter();
@@ -31,7 +32,7 @@ public class UnitTest1
             Id = orderId,
             User = user,
             Basket = basket,
-            PromoCode = promoCode
+            PromoCode = promoCode ?? string.Empty
         };
 
         return (stringWriter, order);
@@ -51,10 +52,8 @@ public class UnitTest1
             user: ("SomeUser", 25_000),
             promoCode: "SALE_20");
 
-        var chain = _builder.Build();
-
         // Act
-        chain.Handle(order);
+        _chain.Handle(order);
         var output = stringWriter.ToString();
 
         // Assert
@@ -73,10 +72,8 @@ public class UnitTest1
             basket: new Dictionary<string, int> { ["fairy item"] = 100 },
             user: ("SomeUser", 0));
 
-        var chain = _builder.Build();
-
         // Act & Assert
-        var ex = Assert.Throws<Exception>(() => chain.Handle(order));
+        var ex = Assert.Throws<Exception>(() => _chain.Handle(order));
         Assert.Equal("Item \"fairy item\" is out of stock", ex.Message);
     }
 
@@ -88,10 +85,8 @@ public class UnitTest1
             basket: new Dictionary<string, int> { ["laptop"] = 1 },
             user: ("SomeUser", 10_000));
 
-        var chain = _builder.Build();
-
         // Act & Assert
-        var ex = Assert.Throws<Exception>(() => chain.Handle(order));
+        var ex = Assert.Throws<Exception>(() => _chain.Handle(order));
         Assert.Contains("User \"SomeUser\" has not enough cash", ex.Message);
     }
 
