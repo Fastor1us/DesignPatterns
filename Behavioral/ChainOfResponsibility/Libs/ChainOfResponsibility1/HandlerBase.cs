@@ -14,9 +14,4 @@ public abstract class HandlerBase<T> : IHandler<T> where T : class
     {
         _next?.Handle(request);
     }
-
-    protected void ThrowIfNull(object? obj, string message)
-    {
-        if (obj is null) throw new ArgumentNullException(message);
-    }
 }
